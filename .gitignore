@@ -1,0 +1,6 @@
+/Java/target
+/java/.*
+/bin/
+/bin/
+node_modules/
+*-bak.*
