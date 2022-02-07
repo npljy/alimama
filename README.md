@@ -4,6 +4,8 @@
 
 ## Get Started
 
+#### Demo 在 examples 文件中
+
 #### Rest API Demo
 ```js
 ApiClient = require('../index.js').ApiClient;
