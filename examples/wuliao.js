@@ -1,5 +1,5 @@
 /**
- * 物料 获取
+ * Module dependencies.
  */
 
 const md5 = require('md5')
@@ -35,10 +35,13 @@ const sign = paramKeys.reduce((s, e) => s += e + params[e], '')
 
 commomParams.sign = md5('secret' + sign + 'secret')
 commomParams['REST_URL'] = 'http://gw.api.taobao.com/router/rest'
-
+console.log(1111, paramKeys)
+console.log(2222, sign)
+console.log(3333, apiParmas)
+console.log(4444, commomParams)
 var client = new ApiClient(commomParams);
 
 client.execute('taobao.tbk.dg.optimus.material', apiParmas, function (error, response) {
-  if (!error) console.log('taobao.tbk.dg.optimus.material', response);
+  if (!error) console.log('taobao.tbk.tpwd.create', response);
   else console.log(error);
 })
